@@ -1,0 +1,247 @@
+
+body,
+button {
+  -webkit-font-smoothing:antialiased !important;
+  text-decoration: none !important;
+  /* overflow-x: hidden !important; */
+  /* font-family: 'Raleway'; */
+}
+:root {
+  --offcanvas-width: 250px !important ;
+  --topNavbarHeight: 56px;
+  --color-primary: #7380ec;
+}
+.sidebar-nav {
+  font-family: 'Raleway';
+
+  width: var(--offcanvas-width)
+}
+.sidebar-link {
+  font-family: 'Raleway' !important;
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* @media (min-width: 1200px) {
+  .responsive-font-example {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .responsive-font-example {
+    font-size:11px;
+  }
+} */
+
+@media (min-width: 992px) {
+  body {
+    /* overflow: auto !important; */
+    -webkit-font-smoothing:antialiased !important;
+  }
+  .ip{
+    display: none !important;
+    margin-left: 140px !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width) !important;
+    height: auto !important;
+    margin-top: 90px;
+    /* background-color: rgb(13, 79, 202) !important; */
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;}
+  }
+
+  main {
+    height: auto !important;
+    margin-top: 90px;
+    /* background-color: rgb(13, 79, 202) !important; */
+  }
+
+  table{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+  
+  table  tr td{
+    border: 1px solid black;
+  padding: 8px;
+      margin-top: 20px;
+  background-color: #f2f2f2;
+}
+ /* table tr td{
+  border-:0;
+
+ } */
+
+/* table tr:hover {background-color: #0b0fdb;} */
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #0b0fdb !important;
+  /* background-color: #331763; */
+  color: white;
+  margin-top: 2rem;
+}
+
+main table tbody td {
+    margin-top: 3rem;
+    height: 2.8rem;
+} 
+td:first-child,
+th:first-child {
+  padding: 8px;
+  border-radius: 10px 0 0 10px;
+  margin-top: 20px;
+}
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+  margin-top: 30px;
+}
+
+main .recent-orders table:hover{
+  box-shadow: none;
+}
+.dow{
+  /* background-color: blue; */
+  width: 100%;
+  /* height: 100vh; */
+}
+.dow a{
+  width: 100%;
+}
+.dow a div{
+  width: 100% !important; 
+}
+
+
+.d
+
+  h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem !important;
+}
+
+h3{
+    font-size: 0.87rem !important;
+}
+
+h4{
+    font-size: 0.8rem !important;
+}
+
+h5{
+    font-size: 0.77rem !important;
+}
+
+small{
+    font-size: 0.75rem !important;
+}
+
+
+.huy{
+  height: 100vh;
+  overflow-x: auto;
+}
+.huy::-webkit-scrollbar {
+  display: none;
+}
+body ::-webkit-scrollbar{
+  display: none;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+ .logo{
+  display: flex;
+  gap: 0.8rem;
+}
+
+a.logo img{
+  width: 2rem;
+  height: 2rem;
+}
+
+
+  .sidebar{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+.sidebar h3{
+    font-weight: 500;
+}
+
+ .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    /* margin-left: 0.4rem; */
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transform: all 300ms ease;
+    text-decoration: none !important;
+}
+
+ .sidebar a span{
+  text-decoration: none !important;
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+/* .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+} */
+
+.sidebar a.active {
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+.sidebar a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+.sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 6px);
+}
+.sidebar a:hover{
+    color: var(--color-primary);
+}
+
+.sidebar a:hover span{
+    margin-left: 1rem;
+}
+
