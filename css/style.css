@@ -7,7 +7,7 @@ button {
   /* font-family: 'Raleway'; */
 }
 :root {
-  --offcanvas-width: 250px !important ;
+  --offcanvas-width: 220px !important ;
   --topNavbarHeight: 56px;
   --color-primary: #7380ec;
 }
@@ -40,7 +40,7 @@ button {
     -webkit-font-smoothing:antialiased !important;
   }
   .ip{
-    display: none !important;
+    /* display: none !important; */
     margin-left: 140px !important;
   }
   main {
@@ -59,45 +59,154 @@ button {
     visibility: visible !important;}
   }
 
+
+.dat{
+  border-radius: 5px;
+  border: thin solid black;
+}
+
+.profile-photo{
+  margin-right: 10px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-phot{
+  /* margin-right: 10px; */
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dot{
+  margin-top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: #0d0c22;
+  background-color:green;
+}
+.up-li {
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+  border-bottom:3px solid red  ;
+}
+.up-l {
+  text-decoration: none;
+  color:grey;
+  padding: 10px;
+}
+.up-li
+  .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
+   
+   
+   
+   
+   
+
   main {
     height: auto !important;
-    margin-top: 90px;
-    /* background-color: rgb(13, 79, 202) !important; */
+    margin-top: 50px;
+    background-color: rgb(243, 233, 233) !important;
   }
 
+  .tpi{
+    background-color: white !important;
+  }
   table{
-    border-collapse: separate;
     border-spacing: 0 15px;
+    border-collapse: separate ;
+  }
+  
+  
+
+  table th{
+    border: none;
+    margin-top: 20px;
   }
 
-  
-  table  tr td{
-    border: 1px solid black;
+  th,
+  tr{
   padding: 8px;
-      margin-top: 20px;
-  background-color: #f2f2f2;
+       margin-top: 20px; 
+   background-color:white; 
+   
+
+} 
+
+tr{
+  background-color:white; 
+
 }
- /* table tr td{
-  border-:0;
 
- } */
 
-/* table tr:hover {background-color: #0b0fdb;} */
+/* table tr:hover {
+  transition: all 3s linear;
+  height: 3.8rem;
+  padding: 40px;
+
+} */
 
 table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   text-align: center;
-  background-color: #0b0fdb !important;
+  background-color:white !important;
   /* background-color: #331763; */
-  color: white;
+  color:black;
   margin-top: 2rem;
 }
 
-main table tbody td {
+table tbody td {
     margin-top: 3rem;
-    height: 2.8rem;
-} 
+    height: 2.3rem;
+  text-align: center;
+
+}
+
 td:first-child,
 th:first-child {
   padding: 8px;
@@ -108,9 +217,10 @@ td:last-child,
 th:last-child {
   border-radius: 0 10px 10px 0;
   margin-top: 30px;
+  
 }
 
-main .recent-orders table:hover{
+ .recent-orders table:hover{
   box-shadow: none;
 }
 .dow{
@@ -157,6 +267,8 @@ small{
 .huy{
   height: 100vh;
   overflow-x: auto;
+  background-color: white;
+  border: none !important;
 }
 .huy::-webkit-scrollbar {
   display: none;
@@ -221,20 +333,21 @@ a.logo img{
 } */
 
 .sidebar a.active {
-    background: var(--color-light);
-    color: var(--color-primary);
+  background-color: rgb(243, 233, 233) !important;
+    color: red;
     margin-left: 0;
+    
 }
 
 .sidebar a.active:before{
     content: '';
-    width: 6px;
+    width: 6px !important;
     height: 100%;
-    background: var(--color-primary);
+    background: red;
 }
 
 .sidebar a.active span{
-    color: var(--color-primary);
+    color: red;
     margin-left: calc(1rem - 6px);
 }
 .sidebar a:hover{
