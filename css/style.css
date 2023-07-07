@@ -91,13 +91,15 @@ button {
 .up-li {
   text-decoration: none;
   color: red;
-  padding: 10px;
+  padding-bottom: 5px;
+
   border-bottom:3px solid red  ;
 }
 .up-l{
   text-decoration: none;
   color:grey;
-  padding: 10px;
+  padding-left: 3px;
+  padding-bottom: 10px;
 }
 
   .group {
