@@ -4,7 +4,7 @@ function activate(){
   let a = document.getElementById('texte');
   a.classList.add("active");
   console.log("hello");
-  // event.preventDefault();
+  e.preventDefault();
 }
 function activat(){
   
