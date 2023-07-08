@@ -101,7 +101,10 @@ button {
   padding-left: 3px;
   padding-bottom: 10px;
 }
+.up-l:active{
 
+  color: green ;
+}
   .group {
     display: flex;
     line-height: 28px;
@@ -158,25 +161,44 @@ button {
   .tpi{
     background-color: white !important;
   }
+  
+  .red{
+    color:red;
+  }
+  .yellow{
+    font-size: 16px;
+    color: rgb(223, 223, 60);
+  }
+  
+   th, td{
+    border: 1px solid black !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+  }
+  
+
+  
+
+
+
+
+
   table{
     border-spacing: 0 15px;
     border-collapse: separate ;
-  }
-  
-  
-
-  table th{
-    border: none;
+    font-weight: 500;
     margin-top: 20px;
   }
+  
+  
 
-  th,
-  tr{
-  padding: 8px;
-       margin-top: 20px; 
+  tr,
+  th{
+    font-weight: bold;
+    padding: 8px;
+     margin-top: 20px; 
    background-color:white; 
    
-
 } 
 
 tr{
@@ -185,29 +207,26 @@ tr{
 }
 
 
-/* table tr:hover {
-  transition: all 3s linear;
-  height: 3.8rem;
-  padding: 40px;
 
-} */
 
 table th {
   padding-top: 9px;
   padding-bottom: 9px;
   text-align: center;
   background-color:white !important;
-  /* background-color: #331763; */
   color:black;
   margin-top: 2rem;
 }
 
-table tbody td {
+table td {
     margin-top: 3rem;
     height: 2.3rem;
   text-align: center;
 
 }
+
+
+
 
 td:first-child,
 th:first-child {
