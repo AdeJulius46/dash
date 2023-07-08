@@ -130,10 +130,7 @@ button {
   padding-left: 3px;
   padding-bottom: 10px;
 }
-.up-l:active{
 
-  color: green ;
-}
   .group {
     display: flex;
     line-height: 28px;
